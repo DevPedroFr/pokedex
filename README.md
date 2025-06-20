@@ -1,59 +1,81 @@
-# Pokedex
+Pokémon App - Angular & PokeAPI
+https://via.placeholder.com/800x400?text=Pok%C3%A9mon+App+Screenshot (Adicione uma imagem real do seu app aqui)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Descrição
+Aplicativo desenvolvido em Angular com Ionic para listagem e visualização de Pokémon utilizando a API pública PokeAPI. O projeto inclui funcionalidades como listagem paginada, detalhes completos dos Pokémon, favoritos persistentes e design responsivo.
 
-## Development server
+Funcionalidades Principais
+✔ Listagem de Pokémon com scroll infinito
+✔ Tela de detalhes com informações completas
+✔ Sistema de favoritos com armazenamento local
+✔ Design responsivo para mobile e desktop
+✔ Navegação por rotas
+✔ Filtro por tipos de Pokémon
+✔ Cores temáticas baseadas no tipo do Pokémon
 
-To start a local development server, run:
+Tecnologias Utilizadas
+Angular 15+
 
-```bash
+Ionic 6+
+
+RxJS para gerenciamento de estado
+
+PokeAPI (https://pokeapi.co/)
+
+LocalStorage para persistência de dados
+
+Como Executar o Projeto
+Clone o repositório:
+
+bash
+git clone https://github.com/seu-usuario/pokemon-app.git
+Instale as dependências:
+
+bash
+npm install
+Inicie o servidor de desenvolvimento:
+
+bash
 ng serve
-```
+Acesse no navegador:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+text
+http://localhost:4200
+Estrutura do Projeto
+text
+src/
+├── app/
+│   ├── pokemon-list/          # Componente da lista de Pokémon
+│   ├── pokemon-details/       # Componente de detalhes
+│   ├── favorites/             # Componente de favoritos
+│   ├── services/              # Serviços da aplicação
+│   ├── utils/                 # Funções utilitárias
+│   ├── app.module.ts          # Módulo principal
+│   └── app.routes.ts          # Configuração de rotas
+Padrões de Desenvolvimento
+Componentes reutilizáveis: Cada funcionalidade principal foi encapsulada em componentes independentes
 
-## Code scaffolding
+Injeção de dependências: Serviços injetados nos componentes conforme necessidade
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Gestão de estado: Utilização de RxJS para fluxo de dados reativo
 
-```bash
-ng generate component component-name
-```
+Armazenamento local: Persistência de dados no cliente via localStorage
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Responsividade: Layout adaptável a diferentes tamanhos de tela
 
-```bash
-ng generate --help
-```
+Melhorias Futuras
+Implementar busca por nome/número
 
-## Building
+Adicionar gráficos de status comparativos
 
-To build the project run:
+Desenvolver visualização da cadeia de evolução
 
-```bash
-ng build
-```
+Adicionar testes unitários e E2E
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Implementar PWA (Progressive Web App)
 
-## Running unit tests
+Autor
+Pedro Henrique Santos França    
+i.m.pedrofranca@gmail.com
+www.linkedin.com/in/pedro-frança-0b3857279
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
